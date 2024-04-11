@@ -1,1 +1,1 @@
-# zerops-astro-static
+# Zerops + Astro (Static)
