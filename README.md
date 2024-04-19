@@ -1,8 +1,8 @@
-# Zerops + Remix - Static
+# Zerops + Astro - Static
 
 ![Header Image](/header.png)
 
-A static Astro example for Zerops which you can deploy in 2 simple steps.
+A Static Astro example for Zerops which you can deploy in 2 simple steps.
 
 **Features**
 
@@ -20,7 +20,7 @@ project:
   name: astro
 
 services:
-  - hostname: astronode
+  - hostname: astrostatic
     type: nodejs@18
     buildFromGit: https://github.com/fxck/zerops-astro-static
     ports:
