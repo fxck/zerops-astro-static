@@ -21,13 +21,28 @@ project:
 
 services:
   - hostname: astrostatic
-    type: nodejs@18
+    type: nginx@1.22
+    nginxConfig: |-
+      server {
+          listen 80 default_server;
+          listen [::]:80 default_server;
+
+          server_name _;
+          root /var/www/out;
+
+          location / {
+              try_files $uri $uri/ /index.html;
+          }
+
+          access_log syslog:server=unix:/dev/log,facility=local1 default_short;
+          error_log syslog:server=unix:/dev/log,facility=local1;
+      }
     buildFromGit: https://github.com/fxck/zerops-astro-static
-    ports:
-      - port: 3000
-        httpSupport: true
     enableSubdomainAccess: true
     minContainers: 1
 ```
 
 If you still find yourself stuck in the process join our [Discord community](https://discord.gg/5ptAqtpyvh).
+
+
+
