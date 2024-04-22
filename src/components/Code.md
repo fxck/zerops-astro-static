@@ -1,6 +1,6 @@
 ```yml
 project:
-   name: zerops-astro
+   name: astro
 
   services:
    - hostname: astrostatic
