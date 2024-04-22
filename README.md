@@ -28,7 +28,7 @@ services:
           listen [::]:80 default_server;
 
           server_name _;
-          root /var/www/out;
+          root /var/www;
 
           location / {
               try_files $uri $uri/ /index.html;
