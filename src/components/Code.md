@@ -3,7 +3,7 @@ project:
    name: zerops-astro
 
   services:
-   - hostname: astronode
+   - hostname: astrostatic
     type: nodejs@18
     buildFromGit: https://github.com/fxck/zerops-astro-static
     ports:
