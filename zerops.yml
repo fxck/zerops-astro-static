@@ -1,5 +1,5 @@
 zerops:
-  - setup: astrozerops
+  - setup: astrostatic
     build:
       base: nodejs@18
       buildCommands:
