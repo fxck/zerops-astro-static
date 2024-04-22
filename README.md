@@ -42,6 +42,7 @@ services:
     minContainers: 1
 ```
 
+
 If you still find yourself stuck in the process join our [Discord community](https://discord.gg/5ptAqtpyvh).
 
 
